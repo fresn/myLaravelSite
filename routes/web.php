@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/**
+ * Set /env for debug purpose
+ */
+Route::get('/env',function (){
+    if(app()->environment()!=='production'){
+        return dump($_ENV);
+    }else{
+        return'this is production env';
+    }
+});
