@@ -25,3 +25,11 @@ Route::get('/env',function (){
         return'this is production env';
     }
 });
+
+Route::get('/db',function (){
+   if(app()->environment()!=='production'){
+       return DB::connection()->getConfig();
+   }else{
+       return 'this is production env';
+   }
+});
