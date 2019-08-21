@@ -9,6 +9,8 @@ env_variables:
     APP_KEY: 'base64:+1DXV4bEv8zobcenrdfBF2B/FsO8QbwYiEmbtbiNaRE='
     APP_LOG: errorlog
     APP_STORAGE: /tmp
+    APP_URL: https://yimingma.net
+    APP_NAME: Laravel
     SESSION_DRIVER: cookie
 
 automatic_scaling:
