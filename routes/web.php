@@ -33,3 +33,18 @@ Route::get('/db',function (){
        return 'this is production env';
    }
 });
+
+Route::get('/session',function (){
+    if(app()->environment()!=='production'){
+        return Session::getDefaultDriver();
+    }else{
+        return 'this is production env';
+    }
+});
+Route::get('/storage',function (){
+    if(env('APP_STORAGE')){
+        return "Customized";
+    }else{
+        return "Default";
+    }
+});

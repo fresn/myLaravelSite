@@ -12,13 +12,14 @@ skip_files:
 
 
 threadsafe: true
+
+
 env_variables:
     APP_KEY: 'base64:+1DXV4bEv8zobcenrdfBF2B/FsO8QbwYiEmbtbiNaRE='
     APP_LOG: errorlog
+
+
 automatic_scaling:
-    cool_down_period: 120s
     min_num_instances: 1
     max_num_instances: 2
-    cpu_utilization:
-        target_utilization: 0.5
-network: {}
+
