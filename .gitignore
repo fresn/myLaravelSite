@@ -4,7 +4,10 @@
 /storage/*.key
 /vendor
 .idea
-*.lock*
+.env
+.env.*
+*.lock
+*-lock*
 .env.backup
 /databasevol
 .phpunit.result.cache

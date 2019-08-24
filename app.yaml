@@ -6,9 +6,9 @@ env: flex
 runtime_config:
     document_root: public
 
-# Ensure we skip ".env", which is only for local development
+# Ensure we skip ".env.bk", which is only for local development
 skip_files:
-    - .env
+    - .env.bk
 
 
 threadsafe: true
